@@ -95,7 +95,4 @@ public class User
 				+this.gender + " "+ this.bio;
 	}
 	
-	
-	
-	
 }

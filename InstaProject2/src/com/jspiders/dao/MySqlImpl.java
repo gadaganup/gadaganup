@@ -12,18 +12,18 @@ import com.jspiders.models.User;
 public class MySqlImpl implements Dao {
 
 	private String url = "jdbc:mysql://localhost:3306/";
-	private String dbname = "usersdb";
+	private String dbname = "users_db";
 	private String dbusername = "root";
 	private String dbuserpwd = "root";
 	private Statement stmt;
 	private PreparedStatement pms;
 	private Connection con;
 
-	private String insertUser = "insert into usersdb.instausers values(?,?,?,?,?,?,?,?)";
-	private String getUser = "select email,pwd from usersdb.instausers where email = ?";
-	private String delteUserbyemail = "delete from usersdb.instausers where email = ?";
-	private String getUserProfile = "select * from usersdb.instausers where email = ?";
-	private String getAllUserProfiles = "select * from usersdb.instausers";
+	private String insertUser = "insert into users_db.instauser values(?,?,?,?,?,?,?,?)";
+	private String getUser = "select email,pwd from users_db.instauser where email = ?";
+	private String delteUserbyemail = "delete from users_db.instauser where email = ?";
+	private String getUserProfile = "select * from users_db.instauser where email = ?";
+	private String getAllUserProfiles = "select * from users_db.instauser";
 
 	@Override
 	public void initDB() throws SQLException {
